@@ -1,0 +1,45 @@
+#:kivy 2.0.0
+
+
+MDScreen: 
+    name: "confirm"
+    
+    
+    MDFloatLayout:
+        md_bg_color: 0/255, 0, 0/255, 1
+        MDLabel:
+            text: "Ask Verma Tech"
+            font_size: "30sp"
+            pos_hint: {"center_x": 0.6, "center_y": 0.9}
+            color: 1, 1, 1, 1
+        MDLabel:
+            text: "Your queries are submitted"
+            font_size: "20sp"
+            pos_hint: {"center_x": 0.6, "center_y": 0.8}
+            color: 1, 1, 1, 1
+        Image:
+            id: gif
+            source: 'img.jpg'
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            center: self.parent.center
+            size: 500, 500
+        MDLabel:
+            text: "Our team will get in touch with you in 30 minutes"
+            font_size: "20sp"
+            pos_hint: {"center_x": 0.51, "center_y": 0.33}
+            color: 1, 1, 1, 1
+        MDLabel:
+            text: "Working day:Monday to Saturday"
+            font_size: "20sp"
+            pos_hint: {"center_x": 0.51, "center_y": 0.25}
+            color: 1, 1, 1, 1
+        MDLabel:
+            text: "Business Hours: 10:00 Am to 6:00 Pm"
+            font_size: "20sp"
+            pos_hint: {"center_x": 0.51, "center_y": 0.17}
+            color: 1, 1, 1, 1
+        MDFlatButton:
+            text:"Visit VermaTech.com"
+            md_bg_color: 0, 0, 1, 1
+            color:1,1,1,1
+            pos_hint:{"center_x":.5,"center_y":.1}            

@@ -1,0 +1,37 @@
+#:kivy 2.0.0
+MDScreen: 
+    name:"busisetup"
+    MDFloatLayout:
+        md_bg_color :0/255,0,0/255,1
+        MDLabel:
+            color:1,1,1,1
+            text:"Hi, "
+            font_size:"35sp"
+            pos_hint:{"center_x":.6,"center_y":.8}
+        MDLabel:
+            id:dis
+            color:1,1,1,1
+            text:"Amit"
+            font_size:"35sp"
+            pos_hint:{"center_x":.75,"center_y":.8}
+        MDLabel:
+            color:1,1,1,1
+            text:"Lets setup your business account"
+            pos_hint:{"center_x":.6,"center_y":.75}
+        MDLabel:
+            color:1,1,1,1
+            text:"Enter your Business Email id :"
+            pos_hint:{"center_x":.6,"center_y":.65}
+        TextInput:
+            pos_hint:{"center_x":.45,"center_y":.55}
+            cursor_color:0,0,0,1
+            background_color:1,1,1,1
+            size_hint_y:.05
+            size_hint_x:.7
+            hint_text:" Email Id"       
+        MDRectangleFlatButton:
+            text:"Continue"
+            color:1,1,1,1
+            pos_hint:{"center_x":.45,"center_y":.4}
+            on_release:app.root.current="select"
+            

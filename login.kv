@@ -1,0 +1,68 @@
+#:kivy 2.0.0
+MDScreen:
+    name:"login"
+    MDFloatLayout:
+        md_bg_color :0/255,0,0/255,1
+        MDIconButton:
+            icon:"chevron-left"
+            user_font_size:"30sp"
+            pos_hint:{ "center_y":.95}
+        MDLabel:
+            text:"Back"
+            font_size:"18sp"
+            text_color:1,1,1,1
+            font_name:"Roboto-Regular.ttf"
+            pos_hint:{"center_x":.615,"center_y":.949}
+        Image:
+            source:"wp1994831.jpg"
+            size:.26,.26
+            pos_hint:{"center_x":.52,"center_y":.8}
+        MDLabel:
+            text:"Create your account"
+            font_name:"Roboto-Regular.ttf"
+            color:1,1,1,1
+            pos_hint:{"center_x":.6,"center_y":.65}
+        MDLabel:
+            text:"Please enter your mobile number :"
+            font_name:"Roboto-Regular.ttf"
+            color:1,1,1,1
+            pos_hint:{"center_x":.6,"center_y":.58}    
+        MDFloatLayout:
+            size_hint:.78,.08       
+            pos_hint:{"center_x":.5,"center_y":.42} 
+            
+            TextInput:
+                size_hint_y:.75
+                hint_text:"Mobile Number"
+                pos_hint:{"center_x":.49,"center_y":.95}
+                background_color:1,1,1,1
+                cursor_color:0,0,0,1
+                foreground_color:120/255,120/255,120/255,1
+                font_size:"17sp"
+                multiline:False
+            
+        MDCheckbox:
+            pos_hint:{"center_x":.1,"center_y":.34}
+            size_hint: None,None 
+            size:'48dp','48dp'
+            color:1,1,1,1
+        MDLabel:
+            pos_hint:{"center_x":.65,"center_y":.33}
+            text:"Enable whatsapp permission to send  updates,reminders"
+            font_size:"16sp"
+            color:1,1,1,1
+            font_name:"Roboto-Regular.ttf"
+        MDRectangleFlatButton:
+            pos_hint:{"center_x":.5,"center_y":.2}
+            text:"Send OTP"
+            color:1,1,1,1
+
+            on_release:app.root.current="otp"
+
+
+                
+
+            
+            
+
+

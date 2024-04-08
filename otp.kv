@@ -1,0 +1,72 @@
+#:kivy 2.0.0
+MDScreen: 
+    name:"otp"
+    MDFloatLayout:
+        md_bg_color :0/255,0,0/255,1
+        MDLabel:
+            text:"Enter OTP send to Mobile Number :"
+            font_size:"17sp"
+            color:1,1,1,1
+            pos_hint:{"center_x":.55,"center_y":.7}
+        TextInput:
+            size_hint_y:.05
+            size_hint_x:.1
+            pos_hint:{"center_x":.2,"center_y":.6}
+            background_color:1,1,1,1
+            cursor_color:0,0,0,1
+            foreground_color:120/255,120/255,120/255,1
+            font_size:"17sp"
+            multiline:False
+        TextInput:
+            size_hint_y:.05
+            size_hint_x:.1
+            pos_hint:{"center_x":.4,"center_y":.6}
+            background_color:1,1,1,1
+            cursor_color:0,0,0,1
+            foreground_color:120/255,120/255,120/255,1
+            font_size:"17sp"
+            multiline:False   
+        TextInput:
+            size_hint_y:.05
+            size_hint_x:.1
+            pos_hint:{"center_x":.6,"center_y":.6}
+            background_color:1,1,1,1
+            cursor_color:0,0,0,1
+            foreground_color:120/255,120/255,120/255,1
+            font_size:"17sp"
+            multiline:False
+        TextInput:
+            size_hint_y:.05
+            size_hint_x:.1
+            pos_hint:{"center_x":.8,"center_y":.6}
+            background_color:1,1,1,1
+            cursor_color:0,0,0,1
+            foreground_color:120/255,120/255,120/255,1
+            font_size:"17sp"
+            multiline:False
+        Label:
+            text:"Didn't recive OTP ?"
+            font_size:"17sp"
+            color:0.5,0.7,0.8,1
+            pos_hint:{"center_x":.5,"center_y":.5}
+        MDRectangleFlatButton:
+            text:"Resend OTP"
+            color:1,1,1,1
+            pos_hint:{"center_x":.5,"center_y":.4}
+        Label:
+            text:"By providing OTP you are agreeing "
+            font_size:"17sp"
+            color:1,1,1,1
+            pos_hint:{"center_x":.5,"center_y":.3}
+        Label:
+            text:"to our terms and condition"
+            font_size:"17sp"
+            color:1,1,1,1
+            pos_hint:{"center_x":.5,"center_y":.25}
+        MDRectangleFlatButton:
+            text:"Continue"
+            color:1,1,1,1
+            on_release:app.root.current="info"
+            pos_hint:{"center_x":.5,"center_y":.15}
+
+
